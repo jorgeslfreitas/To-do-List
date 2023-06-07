@@ -1,6 +1,7 @@
 body {
     font-family: Helvetica, sans-serif;
     background-image: linear-gradient(to right, #88b9b7, #048ffa);
+    background-repeat: repeat-y;
     color: #fff;
     text-align: center;
     padding-top: 30px;   
@@ -8,8 +9,12 @@ body {
 
 #tasks-container {
     width: 500px;
+    padding: 50px;
+    background-color: #9b9b9b;
     margin-left: auto;
     margin-right: auto;
+    border-radius: 10px;
+    border: 1px solid #048ffa;
 }
 
 #tasks-header {
@@ -122,3 +127,18 @@ ion-icon {
     text-decoration: line-through;
 }
 
+@media only screen and (max-width: 768px) {
+    body {
+        background: #048ffa;
+    }
+
+    #tasks-container {
+        width: 280px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+
+}
